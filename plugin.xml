@@ -161,16 +161,9 @@
         </config-file>
 
         <!-- Facebook SDK -->
-        <podspec>
-            <config>
-                <source url="https://github.com/CocoaPods/Specs.git"/>
-            </config>
-            <pods use-frameworks="true">
-                <pod name="FBSDKCoreKit" spec="5.2.3"/>
-                <pod name="FBSDKLoginKit" spec="5.2.3"/>
-                <pod name="FBSDKShareKit" spec="5.2.3"/>
-            </pods>
-        </podspec>
+	<framework custom="true" src="src/ios/framework/FBSDKCoreKit/iOS/FBSDKCoreKit.framework" />
+	<framework custom="true" src="src/ios/framework/FBSDKLoginKit/iOS/FBSDKLoginKit.framework" />
+	<framework custom="true" src="src/ios/framework/FBSDKShareKit/iOS/FBSDKShareKit.framework" />
 
     </platform>
 
